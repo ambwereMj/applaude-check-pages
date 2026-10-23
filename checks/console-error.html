@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Applaude check fixture: A console error</title>
+    <link rel="icon" href="data:,">
+  </head>
+  <body>
+    <h1>A console error</h1>
+    <p>The script below logs an error.</p>
+    <script>
+      // CHECK-CONSOLE: an error written to the console.
+      console.error("Payment widget failed to initialise: missing key");
+    </script>
+  </body>
+</html>

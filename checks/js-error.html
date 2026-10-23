@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Applaude check fixture: A script that crashes</title>
+    <link rel="icon" href="data:,">
+  </head>
+  <body>
+    <h1>A script that crashes</h1>
+    <p>The script below fails as the page loads.</p>
+    <script>
+      // CHECK-JS: an uncaught TypeError on load.
+      window.cart.total();
+    </script>
+  </body>
+</html>
